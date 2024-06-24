@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const path = require('path');
 //const apiRoutes = require('/api');
 
 //router.use('/api', apiRoutes);
@@ -12,11 +13,20 @@ const router = require('express').Router();
 
 router.get("/", function(req,res){
     res.sendFile(path.join(__dirname, "../index.html"));
+    
 });
 
-//TO DO: MAKE ANOTHER ROUTE TO THE DASHBOARD
-
-router.get("/", function(req,res){
-    res.sendFile(path.join)
+router.get("/sign-in", function(req,res){
+    res.sendFile(path.join(__dirname,"../sign-in.html"))
 })
 
+router.get("/sign-up", function(req,res){
+    res.sendFile(path.join__dirname,"../sign-up.html")
+})
+router.get("/dashboard", function(req,res){
+    res.sendFile(path.join(__dirname,"../dashboard.html"))
+})
+
+
+
+module.exports = router;
