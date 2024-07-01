@@ -7,7 +7,6 @@
 body{
     border: 10px solid white;
     background-color: rgb(217, 234, 211);
-    height: 100%;
 }
 
 header{
@@ -47,41 +46,50 @@ h1{
     font-weight: bold;
 }
 
-#login-error{
-    opacity: 0;
-    width: 23%;
-    text-align: center;
-    margin-left: 45%;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #8a0000;
-    border: 1px solid #8a0000;
-    background-color: #e58f8f;
-}
-
-#login-error-msg-second-line {
-    display: block;
-  }
-
-.sign-in-div{
-    margin:10px;
-    margin-left: 30%;
+.Sign-Up-Form{
+    margin:50px;
+    margin-left: 25%;
     padding: 10px;
-    height: auto;
+    height: 60%;
     width: 50%;
     border-radius: 5px 5px;
     background-color: white;
-    margin-top: 5%;
     text-align: center;
-    
-}; 
-
-
-form{
-    justify-content: center;
+    line-height: 150%;
+    font-weight: bold;
 }
+
 #submit{
     border: none;
-    background: none;
+    color: white;
+    font-weight: bold;
+    background: rgb(35, 16, 16);
+    width: 25%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    line-height: 150%;
+    padding: 15px 32px;
+    font-size: 16px;
+    
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+.sign-in-button{
+    color:rgb(35, 16, 16);
+    border: none;
+    font-weight: 400;
+    text-decoration: none;
+}
+.sign-in-button a:visited{
+    color:#231010
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-bar a:visited{
+    color: white
 }

@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sign Up</title>
-    <link href="assets\css\sign-up.css" rel="stylesheet">
+    <link href="public\css\sign-up.css" rel="stylesheet">
 </head>
 
 <header class="header" >
@@ -24,12 +24,14 @@
             <br><label for="username"> Username: </label><br>
             <input type="text" id="username" name="username" required><br>
             <label for="password"> Password:</label><br>
-            <input type="text" id="password" name="password"required><br>
+            <input type="password" id="password" name="password"required><br>
             <label for="confirm">Confirm Password:</label><br>
-            <input type="text" id="confirm" name="confirm" required><br>
+            <input type="password" id="confirm" name="confirm" required><br>
             <input type="submit" id="submit" value="Submit">
         </form>
-        <button><a href="sign-in.html"> Already have an account? Sign in.</button></a>
+        <button class="sign-in-button"><a href="sign-in.html"> Already have an account? Sign in.</button></a>
     </div>
 </body>
+
+<script src="view/sign-up-view.js"> </script>
 </html>

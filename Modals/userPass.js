@@ -12,6 +12,9 @@ UserPass.init(
     password: {
       type: DataTypes.INTEGER,
     },
+    id:{
+      type: DataTypes.INTEGER,
+    }
   },
   {
     sequelize,

@@ -7,6 +7,7 @@
 body{
     border: 10px solid white;
     background-color: rgb(217, 234, 211);
+    height: 100%;
 }
 
 header{
@@ -46,22 +47,42 @@ h1{
     font-weight: bold;
 }
 
-.Sign-Up-Form{
-    margin:10px;
-    margin-left: 40%;
-    padding: 10px;
-    display: flex;
-    height: auto;
-    width: max-content;
-    border-radius: 5px 5px;
-    flex-wrap: wrap;
-    background-color: white;
+#login-error{
+    opacity: 0;
+    width: 23%;
+    text-align: center;
+    margin-left: 45%;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
 }
+
+#login-error-msg-second-line {
+    display: block;
+  }
+
+.sign-in-div{
+    margin:10px;
+    margin-left: 30%;
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    border-radius: 5px 5px;
+    background-color: white;
+    margin-top: 5%;
+    text-align: center;
+    
+}; 
+
 
 form{
     justify-content: center;
 }
-.Sign-Up-Form button{
+#submit{
     border: none;
     background: none;
 }
+
