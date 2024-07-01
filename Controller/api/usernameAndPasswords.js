@@ -13,6 +13,15 @@ router.post('/processSignIn', async (req,res) => {
 })
 
 //Sign-Up
-
+router.post('/processSignUp', async (req,res) =>{
+    try{
+        console.log(req.body);
+        var jsonPost = json.parse(req.body);
+        userPass.create(`{username: '${jsonPost.username}', password: '${jsonPost.password}'}`);
+        res.status(204).end();
+    } catch (err) {
+        res.status(400).json(err)
+    }
+})
 
 module.exports = router;
