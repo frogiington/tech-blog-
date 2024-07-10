@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 // turn on controller
 app.use(controller);
 app.use(express.static('public'));
-//TO DO: create public folder for everything to be available to the client
 
 sequelize.authenticate()
   .then(function () {
